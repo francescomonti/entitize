@@ -1,0 +1,41 @@
+{
+    "name": "wcr/entitize",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/wcr/entitize",
+    "keywords": ["Laravel", "Entitize"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wcr\\Entitize\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wcr\\Entitize\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wcr\\Entitize\\EntitizeServiceProvider"
+            ],
+            "aliases": {
+                "Entitize": "Wcr\\Entitize\\Facades\\Entitize"
+            }
+        }
+    }
+}
