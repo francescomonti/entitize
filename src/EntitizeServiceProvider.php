@@ -27,9 +27,9 @@ class EntitizeServiceProvider extends ServiceProvider
             ], 'entitize.config');
 
             // Publishing the views.
-            /*$this->publishes([
-                __DIR__.'/../resources/views' => base_path('resources/views/vendor/wcr'),
-            ], 'entitize.views');*/
+            $this->publishes([
+                __DIR__.'/../resources/views' => base_path('resources/views/vendor/wcr/entitize/views'),
+            ], 'entitize.views');
 
             // Publishing assets.
             /*$this->publishes([

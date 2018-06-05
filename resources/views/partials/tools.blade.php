@@ -1,0 +1,3 @@
+<a class="btn btn-xs btn-primary" href="<?= action($controllerName.'@show', ['id'=>$resource->id]); ?>"><i class="fa fa-eye"></i>Open</a>
+<a class="btn btn-xs btn-warning" href="<?= action($controllerName.'@edit', ['id'=>$resource->id]); ?>"><i class="fa fa-pencil"></i>Edit</a>
+<a class="btn btn-xs btn-danger" href="<?= action($controllerName.'@destroy', ['id'=>$resource->id]); ?>"><i class="fa fa-times"></i>Delete</a>
