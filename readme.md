@@ -37,7 +37,7 @@ If you discover any security related issues, please email author email instead o
 
 ## Credits
 
-- [author name][link-author]
+- [Francesco Monti][link-author]
 - [All Contributors][link-contributors]
 
 ## License
@@ -49,8 +49,8 @@ license. Please see the [license file](license.md) for more information.
 [ico-travis]: https://img.shields.io/travis/francescomonti/entitize/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/francescomonti/entitize
-[link-downloads]: https://packagist.org/packages/francescomonti/entitize
+[link-packagist]: https://packagist.org/packages/wcr/entitize
+[link-downloads]: https://packagist.org/packages/wcr/entitize
 [link-travis]: https://travis-ci.org/francescomonti/entitize
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/francescomonti
