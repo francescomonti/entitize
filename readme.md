@@ -16,6 +16,79 @@ $ composer require wcr/entitize
 ```
 
 ## Usage
+#### 1. Publish components ####
+``` bash
+$ php artisan vendor:publish --tag:entitize
+```
+
+#### 2. Create Model whith Migration ####
+``` bash
+$ php artisan make:model Book -m
+```
+edit migration `/database/migrations/0000_00_00_000000_create_books_table.php`
+``` php
+<?php
+/** more code **/
+    public function up()
+    {
+        Schema::create('books', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->string('autor');
+            $table->date('published_at')->nullable();
+            $table->boolean('deleted')->default(0); // This field is REQUIRED
+            $table->timestamps();
+        });
+    }
+/** more code **/
+?>
+```
+Launch migration
+``` bash
+$ php artisan migrate
+```
+
+#### 3. Create controller ####
+``` bash
+$ php artisan make:controller BookController
+```
+
+#### 4. use entitize in controlle ####
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Wcr\Entitize\Controllers\Entitize;
+
+use App\Book;
+
+class BookController extends Controller
+{
+    use Entitize;
+
+    public $tableParams = ['Id'=>'id', 'Title'=>'title', 'Author'=>'author', 'Created at'=>'created_at'];
+
+    public $fields = array(
+        [
+            'name' => 'title',
+            'label' => 'Title',
+            'validation' => 'required'
+        ],
+        [
+            'name' => 'author',
+            'label' => 'Author,
+            'validation' => 'required'
+        ],
+        [
+            'name' => 'published_at',
+            'label' => 'Published at',
+            'type' => 'date'
+        ],
+    );
+}
+```
 
 ## Change log
 
