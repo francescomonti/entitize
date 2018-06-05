@@ -78,7 +78,7 @@ class BookController extends Controller
         ],
         [
             'name' => 'author',
-            'label' => 'Author,
+            'label' => 'Author',
             'validation' => 'required'
         ],
         [
