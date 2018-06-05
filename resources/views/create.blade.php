@@ -1,20 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.entitize')
 
-@section('content')
+@section('entitize')
 
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="row">
-                <?= Former::open(action($controllerName.'@store'))->method('PUT'); ?>
-                    <div class="col-md-12">
+    <?= Former::open(action($controllerName.'@store'))->method('PUT'); ?>
+        <div class="col-md-12">
 
-                        @include($partial_fields)
+            @include($partial_fields)
 
-                        <?= Former::actions()->large_primary_submit('Submit')->large_inverse_reset('Reset'); ?>
-                    </div>
-                <?= Former::close() ?>
-            </div>
+            <?= Former::actions()->large_primary_submit('Submit')->large_inverse_reset('Reset'); ?>
         </div>
-    </div>
+    <?= Former::close() ?>
 
 @endsection
