@@ -1,15 +1,15 @@
 {
     "name": "wcr/entitize",
-    "description": ":description",
-    "license": "license",
+    "description": "A crud package for Laravel, with bootstrap and former",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Francesco Monti",
+            "email": "f.monti@webcrafters.it",
+            "homepage": "http://www.webcrafters.it"
         }
     ],
-    "homepage": "https://github.com/wcr/entitize",
+    "homepage": "https://github.com/francescomonti/entitize",
     "keywords": ["Laravel", "Entitize"],
     "require": {
         "illuminate/support": "~5"
