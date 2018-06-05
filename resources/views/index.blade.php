@@ -2,8 +2,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-8 offset-md-3">
-            <h2>@yield('content-title', 'Title')</h2>
+        <div class="col-md-8 col-md-offset-2">
             <div class="row">
 
                 <table class="table">
@@ -33,7 +32,7 @@
                                         </td>
                                     @endif
                                 @endforeach
-                                <td class="tools">
+                                <td class="text-right">
                                     @include($partial_tools, ['resource'=>$resource, 'controllerName' => $controllerName])
                                 </td>
                             </tr>
