@@ -44,14 +44,14 @@ If you discover any security related issues, please email author email instead o
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/wcr/entitize.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/wcr/entitize.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/wcr/entitize/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/francescomonti/entitize.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/francescomonti/entitize.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/francescomonti/entitize/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/wcr/entitize
-[link-downloads]: https://packagist.org/packages/wcr/entitize
-[link-travis]: https://travis-ci.org/wcr/entitize
+[link-packagist]: https://packagist.org/packages/francescomonti/entitize
+[link-downloads]: https://packagist.org/packages/francescomonti/entitize
+[link-travis]: https://travis-ci.org/francescomonti/entitize
 [link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/wcr
+[link-author]: https://github.com/francescomonti
 [link-contributors]: ../../contributors]
